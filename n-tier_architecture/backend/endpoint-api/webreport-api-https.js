@@ -121,6 +121,54 @@ const init = async () => {
     //
     //----------------------------------------------
 
+
+    server.route({
+        method: 'GET',
+        path: '/api/v1/getOnlineAgentByAgentCode',
+        config: {
+            cors: {
+                origin: [
+                    '*'
+                ],
+                headers: ["Access-Control-Allow-Headers", "Access-Control-Allow-Origin", "Accept", "Authorization", "Content-Type", "If-None-Match", "Accept-language"],
+                additionalHeaders: ["Access-Control-Allow-Headers: Origin, Content-Type, x-ms-request-id , Authorization"],
+                credentials: true
+            }
+        },
+        handler: async (request, h) => {
+            let param = request.query;
+
+            try {
+
+                param.agentcode
+                if (param.agentcode == null)
+                    return h.response("Please provide agentcode.").code(400);
+                else {
+
+                    const responsedata = await OnlineAgent.OnlineAgentRepo.getOnlineAgentByAgentCode(`${param.agentcode}`);
+
+                    if (responsedata.statusCode == 500)
+                        return h.response("Something went wrong. Please try again later.").code(500);
+                    else
+                        if (responsedata.statusCode == 200)
+                            return responsedata;
+                        else
+                            if (responsedata.statusCode == 404)
+                                return h.response(responsedata).code(404);
+                            else
+                                return h.response("Something went wrong. Please try again later.").code(500);
+
+                }
+            } catch (err) {
+                console.dir(err)
+            }
+        }
+
+    });
+
+
+
+    
     await server.start();
     console.log('Webreport API Server running on %s', server.info.uri);
 };
