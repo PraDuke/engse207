@@ -1,4 +1,3 @@
-
 const hapi = require('@hapi/hapi');
 let express = require('express');
 const AuthBearer = require('hapi-auth-bearer-token');
@@ -112,18 +111,10 @@ const init = async () => {
         }
     });
 
-    //-------- Your Code continue here -------------------
-    //
-    //
-    //
-    //
-    //
-    //
-    //----------------------------------------------
+    //-------- Code continue here -------------------
 
+ 
 
-
-    
     server.route({
         method: 'GET',
         path: '/api/v1/getOnlineAgentByAgentCode',
@@ -170,7 +161,71 @@ const init = async () => {
 
 
 
-    
+    server.route({
+        method: 'POST',
+        path: '/api/v1/postOnlineAgentStatus',
+        config: {
+            cors: {
+                origin: [
+                    '*'
+                ],
+                headers: ["Access-Control-Allow-Headers", "Access-Control-Allow-Origin", "Accept", "Authorization", "Content-Type", "If-None-Match", "Accept-language"],
+                additionalHeaders: ["Access-Control-Allow-Headers: Origin, Content-Type, x-ms-request-id , Authorization"],
+                credentials: true
+            },
+            payload: {
+                parse: true,
+                allow: ['application/json', 'multipart/form-data'],
+                multipart: true  // <== this is important in hapi 19
+            }
+        },
+        handler: async (request, h) => {
+            let param = request.payload;
+
+            const AgentCode = param.AgentCode;
+            const AgentName = param.AgentName;
+            const IsLogin = param.IsLogin;
+            const AgentStatus = param.AgentStatus;
+            var d = new Date();
+
+            try {
+
+                if (param.AgentCode == null)
+                    //return h.response("Please provide agentcode.").code(400);
+
+                    return h.response({
+                        "error": true,
+                        "statusCode": 400,
+                        "errMessage": "Please provide agentcode."
+                    }).code(400);
+
+                else {
+
+                    const responsedata = await OnlineAgent.OnlineAgentRepo.postOnlineAgentStatus(AgentCode, AgentName, IsLogin, AgentStatus);
+
+
+                    if (responsedata.statusCode == 200)
+                        return responsedata;
+                    else
+                        if (responsedata.statusCode == 404)
+                            return h.response(responsedata).code(404);
+                        else
+                            return h.response("Something went wrong. Please try again later.").code(500);
+
+                }
+
+            } catch (err) {
+                console.dir(err)
+            }
+
+        }
+
+    });
+
+
+
+    //----------------------------------------------
+
     await server.start();
     console.log('Webreport API Server running on %s', server.info.uri);
 };

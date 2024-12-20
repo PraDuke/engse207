@@ -11,7 +11,7 @@ var dbconfig = {
             enableArithAbort: true,
             trustServerCertificate: true,
             trustedconnection:  true,
-            instancename:  '192.168.56.106'  // SQL Server instance name
+            instancename:  '10.21.43.203'  // SQL Server instance name
         }
     },
     production: {
