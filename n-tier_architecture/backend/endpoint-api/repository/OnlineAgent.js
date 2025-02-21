@@ -1,5 +1,5 @@
 const sql = require('mssql');
-const sqlConfig = require('../sqlConfig')['development'];
+const sqlConfig = require('../sqlConfig')['production'];
 
 const { v4: uuid } = require('uuid');
 
@@ -38,10 +38,10 @@ async function getOnlineAgentByAgentCode(agentcode) {
     catch (error) {
         console.log(error);
         return ({
-             error: true,
-             statusCode: 500,
-             errMessage: 'An internal server error occurred',
-         });
+            error: true,
+            statusCode: 500,
+            errMessage: 'An internal server error occurred',
+        });
     }
 }
 
@@ -107,10 +107,39 @@ async function postOnlineAgentStatus(AgentCode, AgentName, IsLogin, AgentStatus)
 
 }
 
+async function deleteOnlineAgent(AgentCode) {
+
+    try {
+
+        let result = await pool.request().query(`SELECT * FROM [OnlineAgents] WHERE [agent_code] = '${agentcode}'`); //@agentcode
+
+        if (!result || result.recordsets[0].length === 0) {
+
+            return ({
+                error: true,
+                errMessage: 'No agent online to delete !!',
+            });
+
+        } else {
+
+            return ({
+                error: false,
+                Message: 'Agent online was deleted !!',
+            });
+        }
+
+
+    } catch (error) {
+        console.log(error);
+        //callBack(error);
+    }
+
+}
 
 module.exports.OnlineAgentRepo = {
 
     getOnlineAgentByAgentCode: getOnlineAgentByAgentCode,
-    postOnlineAgentStatus: postOnlineAgentStatus
-    
+    postOnlineAgentStatus: postOnlineAgentStatus,
+    deleteOnlineAgent: deleteOnlineAgent
 }
+
