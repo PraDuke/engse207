@@ -1,0 +1,3 @@
+{"level":"warn","message":"DeprecationWarning: The Parse Server option 'encodeParseObjectInCloudFunction' default will change to 'true' in a future version.","timestamp":"2025-02-21T08:46:16.685Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-21T08:46:16.686Z"}
+{"level":"info","message":"Parse LiveQuery Server started running","timestamp":"2025-02-21T08:46:16.714Z"}
