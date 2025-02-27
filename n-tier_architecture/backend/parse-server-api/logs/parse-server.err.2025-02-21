@@ -1,1 +1,13 @@
 {"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-21T08:46:16.686Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-21T09:19:07.663Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-21T10:33:03.429Z"}
+{"code":141,"level":"error","message":"Invalid function: \"OnlineByAgentCode\"","stack":"Error: Invalid function: \"OnlineByAgentCode\"\n    at handleCloudFunction (/Users/ITTHIPON/class/engse207/engse207/n-tier_architecture/backend/parse-server-api/node_modules/parse-server/lib/Routers/FunctionsRouter.js:109:13)\n    at /Users/ITTHIPON/class/engse207/engse207/n-tier_architecture/backend/parse-server-api/node_modules/parse-server/lib/PromiseRouter.js:74:20\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-02-21T10:38:52.820Z"}
+{"code":141,"level":"error","message":"Invalid function: \"OnlinyAgentByAgentCode\"","stack":"Error: Invalid function: \"OnlinyAgentByAgentCode\"\n    at handleCloudFunction (/Users/ITTHIPON/class/engse207/engse207/n-tier_architecture/backend/parse-server-api/node_modules/parse-server/lib/Routers/FunctionsRouter.js:109:13)\n    at /Users/ITTHIPON/class/engse207/engse207/n-tier_architecture/backend/parse-server-api/node_modules/parse-server/lib/PromiseRouter.js:74:20\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)","timestamp":"2025-02-21T10:40:30.100Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-21T10:52:59.629Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-21T10:53:04.719Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-21T10:53:07.801Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-21T10:53:12.517Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-21T10:53:26.109Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-21T10:53:28.508Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-21T10:53:30.338Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-21T10:53:57.736Z"}

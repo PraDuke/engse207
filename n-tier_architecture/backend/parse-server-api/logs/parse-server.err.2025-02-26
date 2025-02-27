@@ -1,0 +1,4 @@
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-26T07:02:18.355Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-26T07:02:31.163Z"}
+{"address":"::","code":"EADDRINUSE","errno":-48,"level":"error","port":4000,"syscall":"listen","timestamp":"2025-02-26T07:02:31.190Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-26T07:47:42.961Z"}

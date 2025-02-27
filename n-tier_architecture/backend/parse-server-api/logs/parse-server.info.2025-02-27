@@ -1,0 +1,42 @@
+{"level":"warn","message":"DeprecationWarning: The Parse Server option 'encodeParseObjectInCloudFunction' default will change to 'true' in a future version.","timestamp":"2025-02-27T07:44:34.760Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-27T07:44:34.761Z"}
+{"level":"info","message":"Parse LiveQuery Server started running","timestamp":"2025-02-27T07:44:34.789Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for hello. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T07:44:35.020Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for OnlineAgentByAgentCode. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T07:44:35.020Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for postOnlineAgentListByTeam. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T07:44:35.020Z"}
+{"level":"warn","message":"DeprecationWarning: The Parse Server option 'encodeParseObjectInCloudFunction' default will change to 'true' in a future version.","timestamp":"2025-02-27T07:51:26.703Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-27T07:51:26.705Z"}
+{"level":"info","message":"Parse LiveQuery Server started running","timestamp":"2025-02-27T07:51:26.734Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for hello. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T07:51:26.918Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for OnlineAgentByAgentCode. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T07:51:26.918Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for postOnlineAgentListByTeam. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T07:51:26.918Z"}
+{"level":"warn","message":"DeprecationWarning: The Parse Server option 'encodeParseObjectInCloudFunction' default will change to 'true' in a future version.","timestamp":"2025-02-27T08:11:39.694Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-27T08:11:39.695Z"}
+{"level":"info","message":"Parse LiveQuery Server started running","timestamp":"2025-02-27T08:11:39.722Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for hello. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T08:11:39.909Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for OnlineAgentByAgentCode. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T08:11:39.909Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for postOnlineAgentListByTeam. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T08:11:39.910Z"}
+{"level":"warn","message":"DeprecationWarning: The Parse Server option 'encodeParseObjectInCloudFunction' default will change to 'true' in a future version.","timestamp":"2025-02-27T08:11:47.807Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-27T08:11:47.808Z"}
+{"level":"info","message":"Parse LiveQuery Server started running","timestamp":"2025-02-27T08:11:47.835Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for hello. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T08:11:47.958Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for OnlineAgentByAgentCode. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T08:11:47.958Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for postOnlineAgentListByTeam. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T08:11:47.958Z"}
+{"level":"warn","message":"DeprecationWarning: The Parse Server option 'encodeParseObjectInCloudFunction' default will change to 'true' in a future version.","timestamp":"2025-02-27T08:18:02.244Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-27T08:18:02.245Z"}
+{"level":"info","message":"Parse LiveQuery Server started running","timestamp":"2025-02-27T08:18:02.272Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for hello. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T08:18:02.453Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for OnlineAgentByAgentCode. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T08:18:02.453Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for postOnlineAgentListByTeam. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T08:18:02.454Z"}
+{"level":"warn","message":"DeprecationWarning: The Parse Server option 'encodeParseObjectInCloudFunction' default will change to 'true' in a future version.","timestamp":"2025-02-27T08:26:44.744Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-27T08:26:44.745Z"}
+{"level":"info","message":"Parse LiveQuery Server started running","timestamp":"2025-02-27T08:26:44.772Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for hello. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T08:26:45.122Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for OnlineAgentByAgentCode. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T08:26:45.123Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for postOnlineAgentListByTeam. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T08:26:45.123Z"}
+{"level":"warn","message":"DeprecationWarning: The Parse Server option 'encodeParseObjectInCloudFunction' default will change to 'true' in a future version.","timestamp":"2025-02-27T08:26:51.472Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-02-27T08:26:51.473Z"}
+{"level":"info","message":"Parse LiveQuery Server started running","timestamp":"2025-02-27T08:26:51.500Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for hello. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T08:26:51.636Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for OnlineAgentByAgentCode. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T08:26:51.636Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for postOnlineAgentListByTeam. Only the last one will be used and the others will be ignored.","timestamp":"2025-02-27T08:26:51.636Z"}
