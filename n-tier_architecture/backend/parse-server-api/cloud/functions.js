@@ -11,7 +11,9 @@ Parse.Cloud.define("hello", (req) => {
   
     const query = new Parse.Query("OnlineAgentLists"); // select * from OnlineAgentLists
   
-    query.equalTo("AgentCode", AgentCode); // where AgentCode = 'AgentCode'
+    query.equalTo("AgentCode", AgentCode); // where AgentCode = request.params.AgentCode;
+
+    //console.log("AgentName: "+request.params.AgentName);
   
     let results;
   
