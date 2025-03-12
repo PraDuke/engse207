@@ -273,7 +273,8 @@
                   wsChecks = "true";
                   console.log("new: " + wsChecks);
                   //$("#errMessage").hide();
-
+                  
+                  agentData=response.data;
                   firstLogin(response.data);
                   $("#nodata").show();
                   $("#display").hide();
@@ -496,6 +497,32 @@
         $("#SendMsgBtn").hide();
         $("#help-and-support").hide();
         $("#currentStatus").hide();
+
+         //-- parse-server-api request
+         $.ajax({
+          type: "POST",
+          url: parseServer + "/functions/postOnlineAgentListByTeam",
+          headers: {
+            "X-Parse-Application-Id": devAPI.appId,
+            "X-Parse-Master-Key": devAPI.masterKey,
+          },
+          //data: formData2,
+          data: {
+            AgentCode: agentData.agent_code,
+            AgentName: agentData.AgentName,
+            Queue: "1",
+            AgentStatus: "1",
+            AgentStatusCode: "4",
+            IsLogin: "0",
+          },
+          success: function (result) {
+            console.log("postOnlineAgentListByTeam: " + result);
+          },
+          // processData: false,
+          //contentType: 'application/json',
+          //dataType: "json",
+          //contentType: 'multipart/form-data',
+        });
 
         //-------- Web Socket ----------
         ws.close();
@@ -881,8 +908,8 @@
           },
           // data: formData,
           data: {
-            AgentCode: "9999",
-            AgentName: "คนขายลูกอม",
+            AgentCode: agentData.agent_code,
+            AgentName: agentData.AgentName,
             Queue: "1",
             AgentStatus: selectedValue,
             AgentStatusCode: "4",

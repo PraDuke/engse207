@@ -1,0 +1,16 @@
+{"level":"warn","message":"DeprecationWarning: The Parse Server option 'encodeParseObjectInCloudFunction' default will change to 'true' in a future version.","timestamp":"2025-03-08T07:49:38.382Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-03-08T07:49:38.383Z"}
+{"level":"info","message":"Parse LiveQuery Server started running","timestamp":"2025-03-08T07:49:38.412Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for hello. Only the last one will be used and the others will be ignored.","timestamp":"2025-03-08T07:49:38.700Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for OnlineAgentByAgentCode. Only the last one will be used and the others will be ignored.","timestamp":"2025-03-08T07:49:38.701Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for postOnlineAgentListByTeam. Only the last one will be used and the others will be ignored.","timestamp":"2025-03-08T07:49:38.701Z"}
+{"functionName":"postOnlineAgentListByTeam","level":"info","message":"Ran cloud function postOnlineAgentListByTeam for user undefined with:\n  Input: {\"AgentCode\":\"9999\",\"AgentName\":\"Test Agent 9999\",\"Queue\":\"0\",\"AgentStatus\":\"1\",\"AgentStatusCode\":\"4\",\"IsLogin\":\"1\"}\n  Result: 9","params":{"AgentCode":"9999","AgentName":"Test Agent 9999","AgentStatus":"1","AgentStatusCode":"4","IsLogin":"1","Queue":"0"},"timestamp":"2025-03-08T07:52:10.973Z"}
+{"level":"warn","message":"DeprecationWarning: The Parse Server option 'encodeParseObjectInCloudFunction' default will change to 'true' in a future version.","timestamp":"2025-03-08T07:53:47.016Z"}
+{"level":"error","message":"Invalid key(s) found in Parse Server configuration: useMasterKey","timestamp":"2025-03-08T07:53:47.017Z"}
+{"level":"info","message":"Parse LiveQuery Server started running","timestamp":"2025-03-08T07:53:47.044Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for hello. Only the last one will be used and the others will be ignored.","timestamp":"2025-03-08T07:53:47.237Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for OnlineAgentByAgentCode. Only the last one will be used and the others will be ignored.","timestamp":"2025-03-08T07:53:47.238Z"}
+{"level":"warn","message":"Warning: Duplicate cloud functions exist for postOnlineAgentListByTeam. Only the last one will be used and the others will be ignored.","timestamp":"2025-03-08T07:53:47.238Z"}
+{"level":"info","message":"Create new client: f96c3f4b-b62f-4de5-a95f-bac66a1957be","timestamp":"2025-03-08T07:54:21.524Z"}
+{"level":"info","message":"Client disconnect: f96c3f4b-b62f-4de5-a95f-bac66a1957be","timestamp":"2025-03-08T08:17:23.074Z"}
+{"level":"info","message":"Create new client: bf5719d8-17d6-4ecf-b48d-eb3d003d80d9","timestamp":"2025-03-08T08:17:23.385Z"}
