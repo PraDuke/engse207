@@ -6,8 +6,10 @@ let cors = require('cors');
 
 const OnlineAgent = require('./repository/OnlineAgent');
 
-const apiconfig = require('./apiconfig').development;
+const apiconfig = require('./apiconfig')["development"];
 //const {development} = require('./apiconfig));
+
+const parse_server_config = apiconfig.parse_server;
 
 
 console.log("apiconfig: "+JSON.stringify(apiconfig));
@@ -285,8 +287,8 @@ const init = async () => {
 
                     const responsedata = await OnlineAgent.OnlineAgentRepo.postOnlineAgentStatus(AgentCode, AgentName, IsLogin, AgentStatus);
 
-
                     if (!responsedata.error) {
+
                         if (clientWebSockets[AgentCode]) {
 
                             clientWebSockets[AgentCode].send(JSON.stringify({
@@ -297,6 +299,8 @@ const init = async () => {
                                 AgentStatus: AgentStatus,
                                 DateTime: d.toLocaleString('en-US'),
                             }));
+
+
 
                             const axios = require('axios');
                             const https = require('https'); 
@@ -331,10 +335,17 @@ const init = async () => {
                                 console.log(error);
                             });
 
+
+
+
+                            
                             return ({
                                 error: false,
                                 message: "Agent status has been set.",
                             });
+
+
+
 
                         }
                     }

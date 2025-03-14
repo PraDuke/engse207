@@ -237,7 +237,7 @@
               console.log({ data });
             })
             .fail((err) => {
-              console.error(err);
+              console.error(err);    
             })
             .always(() => {
               console.log("always called");
@@ -499,25 +499,25 @@
         $("#currentStatus").hide();
 
          //-- parse-server-api request
-         $.ajax({
-          type: "POST",
-          url: parseServer + "/functions/postOnlineAgentListByTeam",
-          headers: {
-            "X-Parse-Application-Id": devAPI.appId,
-            "X-Parse-Master-Key": devAPI.masterKey,
-          },
-          //data: formData2,
-          data: {
-            AgentCode: agentData.agent_code,
-            AgentName: agentData.AgentName,
-            Queue: "1",
-            AgentStatus: "1",
-            AgentStatusCode: "4",
-            IsLogin: "0",
-          },
-          success: function (result) {
-            console.log("postOnlineAgentListByTeam: " + result);
-          },
+        //  $.ajax({
+        //   type: "POST",
+        //   url: parseServer + "/functions/postOnlineAgentListByTeam",
+        //   headers: {
+        //     "X-Parse-Application-Id": devAPI.appId,
+        //     "X-Parse-Master-Key": devAPI.masterKey,
+        //   },
+        //   //data: formData2,
+        //   data: {
+        //     AgentCode: agentData.agent_code,
+        //     AgentName: agentData.AgentName,
+        //     Queue: "1",
+        //     AgentStatus: "1",
+        //     AgentStatusCode: "4",
+        //     IsLogin: "0",
+        //   },
+        //   success: function (result) {
+        //     console.log("postOnlineAgentListByTeam: " + result);
+        //   },
           // processData: false,
           //contentType: 'application/json',
           //dataType: "json",
@@ -631,7 +631,7 @@
               var response = message.data;
 
               console.log("message received: " + message.data);
-              // document.getElementById('messageFromServer').innerHTML = response;
+               //document.getElementById('messageFromServer').innerHTML = response;
 
               if (message.data == "NEW USER JOINED") {
                 $("#ConnectionStatus")
@@ -879,8 +879,10 @@
         var selectedValue = selectElement.value;
 
         var formData = new FormData();
-        formData.append("AgentCode", "9999");
-        formData.append("AgentName", "Test Agent 9999");
+        formData.append("AgentCode", agentData.agent_code);
+        formData.append("AgentName", agentData.AgentName);
+        formData.append("Queue", "1");
+        formData.append("AgentName", agentData.AgentName);
         formData.append("IsLogin", "1");
         formData.append("AgentStatus", selectedValue);
 
