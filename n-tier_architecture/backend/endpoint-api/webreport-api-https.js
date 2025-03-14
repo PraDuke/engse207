@@ -265,7 +265,7 @@ const init = async () => {
             const AgentName = param.AgentName;
             const IsLogin = param.IsLogin;
             const AgentStatus = param.AgentStatus;
-            const Queue =param.Queue;
+            const Queue = param.Queue;
             const AgentStatusCode = param.AgentStatusCode;
 
             var d = new Date();
@@ -303,7 +303,7 @@ const init = async () => {
             
                             //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
                             axios.defaults.headers.post['Content-Type'] = 'application/json';
-                            axios.defaults.headers.post['X-Parse-Application-Id'] = parse_server_config.appId;
+                            axios.defaults.headers.post['X-Parse-Application-Id'] = parse_server_config.appid;
                             axios.defaults.headers.post['X-Parse-Master-Key'] = parse_server_config.MasterKey;
             
             
@@ -320,6 +320,8 @@ const init = async () => {
                                 AgentID: AgentID,
                                 AgentName: AgentName,
                                 AgentStatus: AgentStatus,
+                                AgentStatusCode: AgentStatusCode,
+                                Queue: Queue,
                                 IsLogin: IsLogin
                             })
                             .then((response) => {
