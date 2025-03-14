@@ -19,6 +19,7 @@ const apiport = 8443
 
 var url = require('url');
 const { development } = require('./sqlConfig');
+const { parse } = require('path');
 
 var webSocketServer = new (require('ws')).Server({
     port: (process.env.PORT || 3071)
@@ -264,6 +265,9 @@ const init = async () => {
             const AgentName = param.AgentName;
             const IsLogin = param.IsLogin;
             const AgentStatus = param.AgentStatus;
+            const Queue =param.Queue;
+            const AgentStatusCode = param.AgentStatusCode;
+
             var d = new Date();
 
             try {
@@ -293,6 +297,37 @@ const init = async () => {
                                 AgentStatus: AgentStatus,
                                 DateTime: d.toLocaleString('en-US'),
                             }));
+
+                            const axios = require('axios');
+                            const https = require('https'); 
+            
+                            //axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
+                            axios.defaults.headers.post['Content-Type'] = 'application/json';
+                            axios.defaults.headers.post['X-Parse-Application-Id'] = parse_server_config.appId;
+                            axios.defaults.headers.post['X-Parse-Master-Key'] = parse_server_config.MasterKey;
+            
+            
+                            const agent = new https.Agent({
+                                //requestCert: true,
+                                rejectUnauthorized: false,
+                                // ca:fs.readFileSync("server.crt")
+                              });
+            //-------------------------------------------
+                            axios
+                            .post
+                            (parse_server_config.hosturl+"functions/postOnlineAgentList", {
+                                httpsAgent: agent,
+                                AgentID: AgentID,
+                                AgentName: AgentName,
+                                AgentStatus: AgentStatus,
+                                IsLogin: IsLogin
+                            })
+                            .then((response) => {
+                                console.log(response);
+                               // return response.status
+                            }, (error) => {
+                                console.log(error);
+                            });
 
                             return ({
                                 error: false,
