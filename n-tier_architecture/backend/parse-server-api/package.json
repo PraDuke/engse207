@@ -16,7 +16,12 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+<<<<<<< HEAD
     "express": "^4.21.2",
+=======
+    "electron": "^35.0.1",
+    "express": "^4.21.1",
+>>>>>>> fb356e5a2504082bc940f59d5d104a6316a9774b
     "fs": "0.0.1-security",
     "kerberos": "^2.2.0",
     "mongoose": "^8.7.1",
