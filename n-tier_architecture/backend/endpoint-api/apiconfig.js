@@ -2,8 +2,8 @@ var apiconfig = {
     development: {
         serverKey: '1aaZ!ARgAQGuQzp00D5D000000.mOv2jmhXkfIsjgywpCIh7.HZpc6vED1LCbc90DTaVDJwdNqbTW5r4uZicv8AFfkOE1ialqnR8UN5.wnAgh090h',
         parse_server: {
-            hosturl  : 'https://192.168.56.1:4000/api',
-            wsurl    : 'wss://192.168.56.1:4000',
+            hosturl  : 'https://localhost:4000/api',
+            wsurl    : 'wss://localhost:4000',
             masterKey     : 'wallboardapi',
             clientKey     : 'wallboardapi',
             javascriptKey : 'wallboardapi',
@@ -13,8 +13,8 @@ var apiconfig = {
     production: {
         serverKey: '1aaZ!ARgAQGuQzp00D5D000000.mOv2jmhXkfIsjgywpCIh7.HZpc6vED1LCbc90DTaVDJwdNqbTW5r4uZicv8AFfkOE1ialqnR8UN5.wnAgh090h',
         parse_server: {
-            hosturl  : 'https://192.168.56.1:4000/api',
-            wsurl    : 'wss://192.168.56.1:4000',
+            hosturl  : 'https://localhost:4000/api',
+            wsurl    : 'wss://loalhost:4000',
             masterKey     : 'wallboardapi',
             clientKey     : 'wallboardapi',
             javascriptKey : 'wallboardapi',
